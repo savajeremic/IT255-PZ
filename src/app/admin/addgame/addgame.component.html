@@ -1,0 +1,45 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form role="form" (ngSubmit)="onAddGame()" #f="ngForm">
+      <div class="form-group">
+        <label for="name">Game name:</label>
+        <input type="text" id="name" name="name" class="form-control" [(ngModel)]="game.name" #name="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="description">Game Description: </label>
+        <input type="text" id="description" name="description" class="form-control" [(ngModel)]="game.description" #description="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="votes">Votes: </label>
+        <input type="text" id="votes" name="votes" class="form-control" [(ngModel)]="game.votes" #votes="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="cover">Insert game image: </label>
+        <input type="text" id="cover" name="cover" class="form-control" [(ngModel)]="game.cover" #cover="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="version">Game Version: </label>
+        <input type="text" id="version" name="version" class="form-control" [(ngModel)]="game.version" #version="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating: </label>
+        <input type="text" id="rating" name="rating" class="form-control" [(ngModel)]="game.rating" #rating="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="release_date">Game Release: </label>
+        <input type="date" id="release_date" name="release_date" class="form-control" [(ngModel)]="game.release_date" #releasedate="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="size">Game Size: </label>
+        <input type="text" id="size" name="size" class="form-control" [(ngModel)]="game.size" #size="ngModel">
+      </div>
+      <div class="form-group">
+        <label for="price">Price: </label>
+        <input type="text" id="price" name="price" class="form-control" [(ngModel)]="game.price" #price="ngModel">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-default">Add Game</button>
+      </div>
+    </form>
+  </div>
+</div>
