@@ -1,4 +1,4 @@
-# IT255DZ12
+# IT255-PZ
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
